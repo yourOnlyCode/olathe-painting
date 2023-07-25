@@ -6,14 +6,14 @@
 	  {
 		title: 'Ethereal',
 		subtitle: 'You Are The Sky',
-		imageUrl: 'path/to/painting1.jpg',
+		imageUrl: './images/Ethereal.jpg',
 		price: '$800',
 		description: 'Oil on Wood Panel'
 	  },
 	  {
-		title: 'Ethereal 2',
+		title: 'Wonder Land',
 		subtitle: 'You Are The Sky',
-		imageUrl: 'path/to/painting1.jpg',
+		imageUrl: './images/WonderLand.jpg',
 		price: '$800',
 		description: 'Oil on Wood Panel'
 	  }
