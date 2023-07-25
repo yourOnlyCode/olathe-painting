@@ -10,6 +10,6 @@
     <h2 class="text-xl font-semibold mb-2" style="margin-bottom: 10px;">{title}</h2>
     <h4 class="font-regular" style="margin-top: -15px;">{subtitle}</h4>
     <img src={imageUrl} alt={title} style="width: 300px;"/>
-    <div>{price}</div>
     <div>{description}</div>
+    <div>{price}</div>
 </div>

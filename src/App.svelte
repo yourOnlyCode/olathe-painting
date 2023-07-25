@@ -1,8 +1,7 @@
 <script>
 	import Painting from './components/Painting.svelte';
 	import Navbar from './components/Navbar.svelte';
-
-	export let menu = 1;
+	import Contact from './components/Contact.svelte';
 	
 	// Replace these with your painting data
 	const paintings = [
@@ -10,36 +9,72 @@
 		title: 'Ethereal',
 		subtitle: 'You Are The Sky',
 		imageUrl: '/images/Ethereal.jpg',
-		price: '$800',
-		description: 'Oil on Wood Panel'
+		description: '18x24, Oil on Wood Panel',
+		price: '$800'
+	  },
+	  {
+		title: 'Missing Morality',
+		subtitle: '',
+		imageUrl: 'images/MissingMyMorality.jpg',
+		description: '18x24, Oil on Wood Panel',
+		price: '$800'
 	  },
 	  {
 		title: 'Wonderland',
 		subtitle: '',
 		imageUrl: 'images/WonderLand.jpg',
-		price: '$800',
-		description: 'Oil on Wood Panel'
-	  }
+		description: '9x12, Oil on Wood Panel',
+		price: '$400'
+	  },
+	  {
+		title: 'In Her Moment',
+		subtitle: '',
+		imageUrl: 'images/InHerMoment.jpg',
+		description: '12x24, Oil on Wood Panel',
+		price: '$600'
+	  },
+	  {
+		title: 'Our Horizon Is Missing',
+		subtitle: '',
+		imageUrl: 'images/OurHorizonIsMissing.jpg',
+		description: '12x24, Oil on Wood Panel',
+		price: '$600'
+	  },
+	  {
+		title: 'A Chimes Whistle',
+		subtitle: 'From a Dream',
+		imageUrl: 'images/ChimesWhistle.jpg',
+		description: '12x24, Oil on Wood Panel',
+		price: '$600'
+	  },
+	  {
+		title: 'Commission',
+		subtitle: '',
+		imageUrl: 'images/Commission.png',
+		description: 'Your Inspiration',
+		price: 'Contact For Inquiry'
+	  },
 	  // Add more paintings as needed
 	];
+
+	export let menu = 1;
 
 	// VERY LIKELY TO REDO THE WHOLE ROUTING AND EVERYTHING. ITS JUST A MESS AND NOT SUSTAINABLE LONG TERM.
 </script>
 
+<Navbar />
+
+<div class="navbar">
+	<a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a>
+	<a href="/" on:click|preventDefault={() => (menu = 2)}>Gallery</a>
+	<a href="/" on:click|preventDefault={() => (menu = 3)}>Contact</a>
+</div>
+
+{#if menu === 1}
 <div class="whole-container">
-	<div>VERY LIKELY TO REDO THE WHOLE ROUTING AND EVERYTHING. ITS JUST A MESS AND NOT SUSTAINABLE LONG TERM.</div>
-
-	<div id="menu">
-		<a class="menu-item" href="/" on:click|preventDefault={() => (menu = 1)}>Home</a>
-		<a class="menu-item" href="/" on:click|preventDefault={() => (menu = 2)}>Gallery</a>
-		<a class="menu-item" href="/" on:click|preventDefault={() => (menu = 3)}>Contact</a>
-	</div>
-
-	{#if menu === 1}
 	<main class="container">
 		<div class="main-container">
-			<h1 class="header drop-shadow-lg">Matty Olathe</h1>
-			<div>
+			<div style="margin-top: 80px;">
 			{#each paintings as painting}
 				<Painting {...painting} />
 			{/each}
@@ -47,13 +82,7 @@
 			<br>
 		</div>
 	</main>
-	
-	{:else if menu === 2}
-	<div>no</div>
-	{:else}
-	<h1>
-		Page Not Found
-	</h1>
-	{/if}
 </div>
-  
+{:else if menu === 3}
+<Contact />
+{/if}
