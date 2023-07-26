@@ -4,10 +4,29 @@ body::-webkit-scrollbar {
 
 .form-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	margin-top: 100px;
+}
+
+.contact-icon {
+	background:rgb(182, 182, 182);
+	border-radius: 10px;;
+	margin: 10px;
+}
+.contact-icon:hover {
+	background:rgb(117, 102, 102);
+	border-radius: 10px;;
+	margin: 10px;
+}
+
+.main-container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(128, 128, 128, 0.397);
 }
 
 @media only screen and (min-width: 750px) {
@@ -51,13 +70,7 @@ main {
 	justify-content: center;
 	align-items: center;
 }
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: grey;
-}
+
 .header {
 	position: fixed;
 	margin: auto;
@@ -174,7 +187,7 @@ button:focus {
 		justify-content: center;
 		left: 0;
 		right: 0;
-		margin-left: 15px;
+		
 		z-index: 1;
 		background: rgb(66, 66, 66);
 	}
@@ -202,14 +215,7 @@ button:focus {
 		justify-content: center;
 		align-items: center;
 	}
-	.main-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		background: grey;
-		margin-bottom: 40px;
-	}
+	
 	.header {
 		position: fixed;
 		margin: auto;

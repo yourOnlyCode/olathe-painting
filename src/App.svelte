@@ -10,42 +10,42 @@
 		subtitle: 'You Are The Sky',
 		imageUrl: '/images/Ethereal.jpg',
 		description: '18x24, Oil on Wood Panel',
-		price: '$800'
+		price: '$600'
 	  },
 	  {
 		title: 'Missing Morality',
 		subtitle: '',
 		imageUrl: 'images/MissingMyMorality.jpg',
 		description: '18x24, Oil on Wood Panel',
-		price: '$800'
+		price: '$600'
 	  },
 	  {
 		title: 'Wonderland',
 		subtitle: '',
 		imageUrl: 'images/WonderLand.jpg',
 		description: '9x12, Oil on Wood Panel',
-		price: '$400'
+		price: '$300'
 	  },
 	  {
 		title: 'In Her Moment',
 		subtitle: '',
 		imageUrl: 'images/InHerMoment.jpg',
 		description: '12x24, Oil on Wood Panel',
-		price: '$600'
+		price: '$450'
 	  },
 	  {
 		title: 'Our Horizon Is Missing',
 		subtitle: '',
 		imageUrl: 'images/OurHorizonIsMissing.jpg',
 		description: '12x24, Oil on Wood Panel',
-		price: '$600'
+		price: '$450'
 	  },
 	  {
 		title: 'A Chimes Whistle',
 		subtitle: 'From a Dream',
 		imageUrl: 'images/ChimesWhistle.jpg',
 		description: '12x24, Oil on Wood Panel',
-		price: '$600'
+		price: '$450'
 	  },
 	  {
 		title: 'Commission',
@@ -65,8 +65,8 @@
 <Navbar />
 
 <div class="navbar">
-	<a href="/" on:click|preventDefault={() => (menu = 1)}>Home</a>
-	<a href="/" on:click|preventDefault={() => (menu = 2)}>Gallery</a>
+	<a href="/" on:click|preventDefault={() => (menu = 1)}>Gallery</a>
+	<!--<a href="/" on:click|preventDefault={() => (menu = 2)}>Gallery</a>-->
 	<a href="/" on:click|preventDefault={() => (menu = 3)}>Contact</a>
 </div>
 
